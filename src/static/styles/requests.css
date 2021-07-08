@@ -1,0 +1,63 @@
+.btn{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(79, 65, 158);
+    color: rgb(188, 184, 247);
+    padding: 5px;
+    width: 100px;
+}
+
+
+
+.btn:hover{
+    background-color: rgb(105, 90, 192);
+    color: rgb(229, 228, 241);
+}
+
+.btn.unhoverable{
+    background-color: rgb(79, 65, 158);
+    color: rgb(188, 184, 247);
+}
+
+.btn.complete{
+    background-color: rgb(4, 122, 50);
+    color: rgb(87, 240, 108);
+}
+
+.btn.complete:hover{
+    background-color: rgb(4, 122, 50);
+    color: rgb(87, 240, 108);
+}
+
+.btn.refused{
+    background-color: rgb(122, 4, 4);
+    color: rgb(240, 87, 87);
+}
+
+.btn.refused:hover{
+    background-color: rgb(122, 4, 4);
+    color: rgb(240, 87, 87);
+}
+
+td{
+    align-content: center;
+    text-align: center;
+}
+
+.modal-title{
+    font-size: 24px;
+    width:100%;
+    padding: 10px;
+    color: #ddd;
+    float:right;
+}
+
+#document-modal{
+    margin-top:-50px;
+    height:120%;
+}
+
+#document-preview{
+    
+    height:550px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    SignMe! - Sent Requests
+  </title>
+  <link rel="stylesheet" type="text/css" href="/styles/msteams-16.css">
+  </link>
+  <link rel="stylesheet" type="text/css" href="/styles/custom.css">
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel = "stylesheet" type = "text/css" href = "/styles/requests.css"/>
+  </link>
+  <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+  <script src="/scripts/teamsapp.js"></script>
+  <script src="/scripts/requests.js"></script>
+  <link rel = "stylesheet" type = "text/css" href = "../static/styles/requests.css"/>
+  <script src="../static/scripts/teamsapp.js"></script>
+  <script src="../static/scripts/requests.js"></script>
+</head>
+
+<body class="theme-light">
+  <div class="surface">
+    <div class="panel">
+        <h1 id = "page-title">SignMe - Received Requests</h1>
+        <a href = "/requests/sent">Sent Requests</a>
+      <div class="font-semibold font-title">Received Requests
+      </div>
+        <p> Here you will see all the signature requests you have received through the app</p>
+        <hr>
+        <table id = "requests">
+            <tr>
+                <th>Document Title</th>
+                <th>Preview</th>
+                <th>Status</th>
+                <th>Sent From</th>
+                <th>Request Date</th>
+                <th>Last Update Date</th>
+            </tr>
+            <tr>
+                <td>SPEC Form - Alick Campbell</td>
+                <td><button class = "preview btn">Preview</button></td>
+                <td><button class = "signing btn">Sign</button></td>
+                <td>Damani Brown</td>
+                <td>7/5/2021</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>PA Form - Jermaine James</td>
+                <td><button class = "preview btn">Preview</button></td>
+                <td><button class = "complete btn">Complete</button></td>
+                <td>Rosan Reynolds-Salmon</td>
+                <td>7/4/2021</td>
+                <td>7/4/2021</td>
+            </tr>
+            <tr>
+                <td>PA Form - D'Andra Clarke</td>
+                <td><button class = "preview btn">Preview</button></td>
+                <td><button class = "refused btn">Refused</button></td>
+                <td>Winston Blackwood</td>
+                <td>7/4/2021</td>
+                <td>7/5/2021</td>
+            </tr>
+        </table>
+        <div class = "w3-modal" id = "document-modal">
+            
+            <div class = "w3-modal-content w3-animate-top w3-card-4">
+                <span id = "close_preview" class = "w3-container w3-teal modal-title">Close <i class = "fa fa-close"></i></span>
+                <div id = "document-preview">
+                    <embed src = "https://www.soundczech.cz/temp/lorem-ipsum.pdf" type = "application/pdf" width = "100%" height = "100%">
+                </div>
+            </div>
+        </div>
+        <div class = "w3-modal" id = "signing-modal">
+            <div class = "w3-modal-content w3-animate-top w3-card-4" style="height: 100%; width: 100%; overflow: auto;" data-role="content">
+                <span id = "close_sign_preview" class = "w3-container w3-teal modal-title">Close <i class = "fa fa-close"></i></span>
+                <div id = "document-signing">
+                    <iframe id="esignIframe" src="https://jpscoltd.sharepoint.com/sites/Dev/HROrganisationalRestructure/Lists/SPEC%20Form/Attachments/25/Test%20M%20Ployee_SPEC_Form_1.0.pdf" style="width: 99% !important;height: 99% !important;position: absolute;" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

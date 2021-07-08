@@ -1,0 +1,106 @@
+{
+	"folderName":"Sample Documents",
+	"fileUrls":[],
+	"fileNames":[],
+	"processTextTags":false,
+	"processAcroFields":true,
+	"signInSequence":false,
+	"inPersonEnable":false,
+	"custom_field1":{
+  	"name":"NAME",
+  	"value":"VALUE"
+         },
+    
+      	"custom_field2":{
+  	"name":"NAME",
+  	"value":"VALUE"
+         },
+	"sendNow":false,
+	"signSuccessUrlAllParties":false,
+	"emailTemplateId":2,
+	"signerInstructionId":1,
+	"confirmationInstructionId":2,
+	"emailTemplateCustomFields":[
+  	{
+  		"tag":"CUSTOM_TAGS_1",
+  		"type":"plain",
+  		"value":"Please click on the View Document(s) link below to review and esign the documents as required."
+  	},
+  	{
+  		"tag":"CUSTOM_TAGS_2",
+  		"type":"hyperlink",
+  		"value":"click here's",
+  		"url":"HYPERTEXT_REFERENCE"
+  	}
+  	
+  	
+  	],
+  	"signerInstructionCustomFields":[
+  	{
+  		"tag":"CUSTOM_TAGS_1",
+  		"type":"plain",
+  		"value":"Please review the document."
+  	}
+  	],
+  	"confirmationInstructionCustomFields":[
+  	{
+  		"tag":"CUSTOM_TAGS_2",
+  		"type":"plain",
+  		"value":"Click here to confirm signing."
+  	}
+  	],
+	"createEmbeddedSendingSession":false,
+	"fixRecipientParties":true,
+	"fixDocuments":true,	
+	"hideSignerSelectOption":false,
+	"hideAddMeButton":false,
+	"hideAddNewButton":true,
+	"hideAddGroupButton":false,
+	"hideSignerActions": false,
+	"hideSenderName": true,
+	"hideFolderName": false,
+	"hideDocumentsName": true,
+	"sendSuccessUrl":"https://google.com",
+	"sendErrorUrl":"https://google.com",
+	"createEmbeddedSigningSession":true,
+	"createEmbeddedSigningSessionForAllParties":false,
+	"embeddedSignersEmailIds":["k.burke803@gmail.com"],
+	"signSuccessUrl":"https://google.com",
+	"signDeclineUrl":"https://google.com",
+	"signLaterUrl":"https://google.com",
+	"signErrorUrl":"https://google.com",
+	"sessionExpire":false,
+	"expiry":300000,
+	"allowSendNowAndEmbeddedSigningSession":false,
+	"allowAdvancedEmailValidation":true,
+	"parties":[
+		{
+			"firstName":"FIRST_NAME_OF_RECIPIENT_PARTY",
+			"lastName":"LAST_NAME_OF_RECIPIENT_PARTY",
+			"emailId":"EMAIL_ID_OF_RECIPIENT_PARTY",
+			"permission":"FILL_FIELDS_AND_SIGN",
+			"workflowSequence":1,
+			"sequence":1,
+			"hostEmailId":"EMAIL_ID_OF_INPERSON_ADMINISTRATOR",
+			"allowNameChange":true,
+			"dialingCode": "+1",
+			"mobileNumber": "RECIPIENT_PARTY_MOBILE_NUMBER",
+			"signerAuthLevel":"Email Access Code"
+		},
+		{
+			"firstName":"FIRST_NAME_OF_RECIPIENT_PARTY",
+			"lastName":"LAST_NAME_OF_RECIPIENT_PARTY",
+			"emailId":"EMAIL_ID_OF_RECIPIENT_PARTY",
+			"permission":"FILL_FIELDS_AND_SIGN",
+			"workflowSequence":1,
+			"sequence":1,
+			"hostEmailId":"EMAIL_ID_OF_INPERSON_ADMINISTRATOR",
+			"allowNameChange":true,
+			"signerAuthLevel":"User-defined Access Code",
+			"userDefinedAccessCode":"123Test@"
+		}
+		
+	],	
+	"senderEmail":"user2@example.com"
+	
+}
